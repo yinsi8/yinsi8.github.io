@@ -1,0 +1,3 @@
+# ignore raw novels before preprocessing; might have encoding issue
+raw_novel_texts/
+Book1.xlsx
