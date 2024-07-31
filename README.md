@@ -30,10 +30,10 @@
 - 最好能写个批量detect encoding + conversion的script，大家给的txt都是不同encoding啊……
 - 要是搞dynamic了就可以直接做form让他们submit了
   
-### TODO：改bug
-- 添加主图
-- 幻灯片式插图
-
+### TODO：改bug/urgent tasks
+- 分页？mainly for individual author --> 做好就可以找作者单独要作品/个人介绍了
+- toggle div for past activities
+- dark mode修改一下？
 
 ## 待加功能
 一些可能实现的功能，供站主记录。
@@ -42,7 +42,6 @@
 - 添加主图
 - 幻灯片式插图
 - UI设计
-- 分页？
 
 ### 下载链接
 - 需要人工汇总、整理后由站主上传
