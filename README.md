@@ -31,6 +31,7 @@
 - 要是搞dynamic了就可以直接做form让他们submit了
   
 ### TODO：改bug/urgent tasks
+- need to verify gh acc set up on mac...
 - 分页？mainly for individual author --> 做好就可以找作者单独要作品/个人介绍了
 - toggle div for past activities
 - dark mode修改一下？
