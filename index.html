@@ -1,0 +1,624 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>胤禩同人作品堆放地</title>
+<meta charset="utf-8">
+<!--<meta name="color-scheme" content="light only">-->
+<!--<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+table {
+  background-color: #ffffff;
+  color: #2b2b2b;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th {
+  cursor: pointer;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+  color: #2b2b2b
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+
+<!-- avoiding chrome force dark mode -->
+<script>
+    var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if(isDarkMode){
+    document.write(`<meta name="color-scheme" content="dark Only"><\/meta>`);
+    }
+</script>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">首页</a>
+    <a href="#activity" class="w3-bar-item w3-button w3-padding-large w3-hide-small">活动</a>
+    <a href="#archives" class="w3-bar-item w3-button w3-padding-large w3-hide-small">同人作品</a>
+    <a href="#literature" class="w3-bar-item w3-button w3-padding-large w3-hide-small">史料文献</a>
+    <a href="#information" class="w3-bar-item w3-button w3-padding-large w3-hide-small">关于本站</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">待建中...<i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">待建sub1</a>
+        <a href="#" class="w3-bar-item w3-button">待建sub2</a>
+        <a href="#" class="w3-bar-item w3-button">待建sub3</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="#activity" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">活动</a>
+    <a href="#archives" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">同人作品</a>
+    <a href="#literature" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">史料文献</a>
+    <a href="#information" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">关于本站</a>
+    <!-- <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>-->
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+    <img src="./images/banner.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-hide-small w3-padding-16 w3-center">
+        <h3>胤禩相关作品堆放站</h3>
+        <p><i>本项目为无盈利同人作品共享平台，仅供爱好交流</i></p>
+        <p><i>目前主图是随便找的素材，如果有画手太太愿意提供一张，感激不尽！</i></p>
+        <!--<p><i>暂不支持夜间模式，如果网页出现大片黑色，请将APP/手机/电脑等设置为日间模式，再访问本站~</i></p>-->
+    </div>
+</div>
+    
+<div div class="w3-container w3-content w3-center w3-padding-64 w3-hide-large w3-hide-medium" style="max-width:800px">
+    <p class="w3-opacity"><b>胤禩相关作品堆放站</b></p>
+    <p><i>本项目为无盈利同人作品共享平台，仅供爱好交流</i></p> 
+    <p><i>目前主图是随便找的素材
+    <br>如果有画手太太愿意提供一张，感激不尽！
+</i></p>
+</div>  
+
+    <!-- Automatic Slideshow Images -->
+    <!--<div class="mySlides w3-display-container w3-center">
+      <img src="./images/banner.jpg" style="width:100%">
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+        <h3>Los Angeles</h3>
+        <p><b>We had the best time playing at Venice Beach!</b></p>
+      </div>
+    </div>
+    <div class="mySlides w3-display-container w3-center">
+      <img src="/w3images/ny.jpg" style="width:100%">
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+        <h3>New York</h3>
+        <p><b>The atmosphere in New York is lorem ipsum.</b></p>
+      </div>
+    </div>
+    <div class="mySlides w3-display-container w3-center">
+      <img src="/w3images/chicago.jpg" style="width:100%">
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+        <h3>Chicago</h3>
+        <p><b>Thank you, Chicago - A night we won't forget.</b></p>
+      </div>
+    </div>-->
+    <!-- The activity Section -->
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="activity">
+        <h2 class="w3-wide">活动一览</h2>
+        
+        <br>
+        <!--<h3 class="w3-justify w3-center">正在进行：</h3>--> 
+        <p class="w3-opacity"><b>并蒂莲 | 胤禩七夕二十四时</b>
+        <br><br>
+        <i>雍正初，廉王夫妇，恩爱甚笃，
+                                  <br>以私情不悦上，后上令彼此无见也。
+                                  <br>其后廉王废为庶人而死，
+                                  <br>火化，骨灰送还其家，衣服仍可验。
+                                  <br>其妻赐死，天使命挫骨扬灰，倾于河中。
+                                  <br>是岁此陂荷花开，无不并蒂者，
+                                  <br>时人无不感慨，有子弟为其作曲。
+                                  <br>问莲根、有丝多少，莲心知为谁苦？
+                                  <br>双花脉脉娇相向，只是旧家儿女。
+                                  <br>天已许。
+                                  <br>甚不教、白头生死鸳鸯浦？
+                                  <br>夕阳无语。
+                                  <br>算谢客烟中，湘妃江上，未是断肠处。
+                                  <br>香奁梦，好在灵芝瑞露。人间俯仰今古。
+                                  <br>海枯石烂情缘在，幽恨不埋黄土。
+                                  <br>相思树，流年度，无端又被西风误。
+                                  <br>兰舟少住。
+                                  <br>怕载酒重来，红衣半落，狼藉卧风雨。</i></p>
+
+        <p class="w3-opacity"><b>8月10日即将上线</b></p>
+        <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+            <!--<img src="./activity/bing-di-lian.jpg" style="width:100%">-->
+            <!--<div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+          <h3>Chicago</h3>
+          <p><b>Thank you, Chicago - A night we won't forget.</b></p>
+        </div>-->
+        </div>
+
+        <p class="w3-opacity"><b>胤禩相关同人制品 by 秦观</b></p>
+        <p class="w3-opacity"><i>群号：984033075
+                                  <br></i></p>
+        <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+            <img src="./activity/qin-guan.jpg" style="width:100%">
+            <!--<div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+          <h3>Chicago</h3>
+          <p><b>Thank you, Chicago - A night we won't forget.</b></p>
+        </div>-->
+        </div>
+
+        <br>
+        <h3 class="w3-justify w3-center">圆满结束：</h3>
+        <br>
+        <p class="w3-opacity"><b>与君歌 | 胤禩端午二十四时</b></p>
+        <p class="w3-opacity"><i>正是浴兰时节动，菖蒲酒美清尊共。
+                                  <br>叶里黄鹂时一弄，犹瞢忪，等闲惊破纱窗梦。</i></p>
+        <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+            <img src="./activity/yu-jun-ge.jpg" style="width:100%">
+            <!--<div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+          <h3>Chicago</h3>
+          <p><b>Thank you, Chicago - A night we won't forget.</b></p>
+        </div>-->
+        </div>
+
+        <p class="w3-opacity"><b>同心契 | 胤禩生辰二十四时</b></p>
+        <p class="w3-opacity">
+            <i>
+                契结同心怀春日，夜来相思不老天。
+                <br>花外楼，柳下舟，人间月明明。
+                <br>誓盟山海对秋月，风起情寄红豆杉。
+                <br>水空流，年华休，旧梦何堪惊。
+            </i>
+        </p>
+        <!--<p class="w3-opacity">（这张图有太太lofter水印，todo: 上传原图）</p>-->
+        <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+            <img src="./activity/tong-xin-qi.jpg" style="width:100%">
+        </div>
+        <div class="w3-row w3-padding-32">
+
+        </div>
+    </div>
+
+    <!-- The archives Section -->
+    <div class="w3-black" id="archives">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+            <h2 class="w3-wide w3-center">同人作品</h2>
+            <p class="w3-opacity w3-center"><i>感谢各位作者老师辛勤创作！
+                                                <br>本站资源仅供爱好交流，请勿商用牟利，谢谢合作！</i></p><br>
+
+
+            <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+                <!-- <div class="w3-third w3-margin-bottom"> -->
+                <!--<img src="/w3images/newyork.jpg" alt="可插入图片" style="width:100%" class="w3-hover-opacity">-->
+
+                <p><strong>点击表格可排序</strong></p>
+                <p><i>点击一次：拼音首字母顺序(A to Z)；
+                       <br>再次点击：拼音首字母倒序(Z to A)。</i></p>
+
+                <table id="tongren-table">
+                    <tr>
+                        <!--When a header is clicked, run the sortTable function, with a parameter, 0 for sorting by names, 1 for sorting by country:-->
+                        <th onclick="sortTable(0)">标题</th>
+                        <th onclick="sortTable(1)">作者</th>
+                        <th>CP</th>
+                        <th>篇幅</th>
+                        <th onclick="sortTable(4)">年份</th>
+                    </tr>
+                    <tr>
+                        <td><a href="./novels/错位关系创伤后遗症与心理疏导.txt">错位关系创伤后遗症与心理疏导</a></td>
+                        <td>六千余生</td>
+                        <td>48</td>
+                        <td>中篇</td>
+                        <td>2024</td>
+                    </tr>
+                    <!--<tr>
+                        <td><a href="https://6foldafterlife.github.io/topic_148_index.html">重逢的十四昼夜</a></td>
+                        <td>六千余生</td>
+                        <td>148</td>
+                        <td>中篇</td>
+                        <td>2024</td>
+                    </tr>-->
+                    <tr>
+                        <td><a href="./novels/双罗袖.txt">双罗袖</a></td>
+                        <td>月迷津渡</td>
+                        <td>48</td>
+                        <td>长篇</td>
+                        <td>2024</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./novels/粤女.txt">粤女</a></td>
+                        <td>莉莉丝</td>
+                        <td>4148</td>
+                        <td>短篇</td>
+                        <td>2022</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./novels/太子爷.txt">太子爷</a></td>
+                        <td>海棠作者id未知</td>
+                        <td>28</td>
+                        <td>中篇</td>
+                        <td>2024</td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="./novels/你都读的什么书.txt">你都读的什么书</a></td>
+                        <td>一个感情充沛的小号</td>
+                        <td>九子群像</td>
+                        <td>短篇</td>
+                        <td>2024</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./novels/反骨.txt">反骨</a></td>
+                        <td>一个感情充沛的小号</td>
+                        <td>48</td>
+                        <td>短篇</td>
+                        <td>2022</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./novels/大婚.txt">大婚</a></td>
+                        <td>一个感情充沛的小号</td>
+                        <td>8福8</td>
+                        <td>短篇</td>
+                        <td>2024</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./novels/帝命.txt">帝命</a></td>
+                        <td>一个感情充沛的小号</td>
+                        <td>148</td>
+                        <td>中篇</td>
+                        <td>2024</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./novels/知命.txt">知命</a></td>
+                        <td>一个感情充沛的小号</td>
+                        <td>4138</td>
+                        <td>长篇</td>
+                        <td>2022</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./novels/知命番外合集.txt">知命番外合集</a></td>
+                        <td>一个感情充沛的小号</td>
+                        <td>413148</td>
+                        <td>番外</td>
+                        <td>2023</td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="./novels/雨花阁情事.txt">雨花阁情事</a></td>
+                        <td>乌龙茶茶</td>
+                        <td>48</td>
+                        <td>短篇</td>
+                        <td>2022</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./novels/寻常歌.txt">寻常歌</a></td>
+                        <td>乌龙茶茶</td>
+                        <td>48</td>
+                        <td>中篇</td>
+                        <td>2024</td>
+                    </tr>
+
+
+                    <tr>
+                        <td><a href="./novels/历史直播.txt">历史直播</a></td>
+                        <td>叽叽叽</td>
+                        <td></td>
+                        <td>短篇</td>
+                        <td>2024</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./novels/花市烤肉.txt">花市烤肉</a></td>
+                        <td>叽叽叽</td>
+                        <td></td>
+                        <td>中篇</td>
+                        <td>2024</td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td><a href="./novels/八哥不是一只鸟.txt">八哥不是一只鸟</a></td>
+                        <td>vivianco</td>
+                        <td></td>
+                        <td>长篇</td>
+                        <td>2021或之前</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./novels/八哥没人要.txt">八哥没人要</a></td>
+                        <td>白皮灯笼</td>
+                        <td></td>
+                        <td>长篇</td>
+                        <td>2021或之前</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./novels/养龙.txt">养龙</a></td>
+                        <td>焦糖布丁</td>
+                        <td>48</td>
+                        <td>长篇</td>
+                        <td>2021或之前</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./novels/囚龙.txt">囚龙</a></td>
+                        <td>焦糖布丁</td>
+                        <td>48</td>
+                        <td>长篇</td>
+                        <td>2021或之前</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./novels/如斯.txt">如斯</a></td>
+                        <td>洛寒食</td>
+                        <td></td>
+                        <td>长篇</td>
+                        <td>2021或之前</td>
+                    </tr>
+
+                </table>
+
+                <script>
+                    function sortTable(n) {
+                        var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+                        table = document.getElementById("tongren-table");
+                        switching = true;
+                        //Set the sorting direction to ascending:
+                        dir = "asc";
+                        /*Make a loop that will continue until
+                        no switching has been done:*/
+                        while (switching) {
+                            //start by saying: no switching is done:
+                            switching = false;
+                            rows = table.rows;
+                            /*Loop through all table rows (except the
+                            first, which contains table headers):*/
+                            for (i = 1; i < (rows.length - 1); i++) {
+                                //start by saying there should be no switching:
+                                shouldSwitch = false;
+                                /*Get the two elements you want to compare,
+                                one from current row and one from the next:*/
+                                x = rows[i].getElementsByTagName("TD")[n].innerHTML.toLowerCase();
+                                y = rows[i + 1].getElementsByTagName("TD")[n].innerHTML.toLowerCase();
+                                /*check if the two rows should switch place,
+                                based on the direction, asc or desc:*/ 
+                                if (dir == "asc") {
+                                    if (x.localeCompare(y, 'zh-CN') > 0){
+                                        //if so, mark as a switch and break the loop:
+                                        shouldSwitch = true;
+                                        break;
+                                    }
+                                } else if (dir == "desc") {
+                                    if (x.localeCompare(y, 'zh-CN') < 0) {
+                                        //if so, mark as a switch and break the loop:
+                                        shouldSwitch = true;
+                                        break;
+                                    }
+                                }
+                            }
+                            if (shouldSwitch) {
+                                /*If a switch has been marked, make the switch
+                                and mark that a switch has been done:*/
+                                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                                switching = true;
+                                //Each time a switch is done, increase this count by 1:
+                                switchcount++;
+                            } else {
+                                /*If no switching has been done AND the direction is "asc",
+                                set the direction to "desc" and run the while loop again.*/
+                                if (switchcount == 0 && dir == "asc") {
+                                    dir = "desc";
+                                    switching = true;
+                                }
+                            }
+                        }
+                    }
+                </script>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- </div> -->
+    <!-- The literature Section -->
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="literature">
+        <h2 class="w3-wide w3-center">史料文献</h2>
+        <p class="w3-opacity w3-center"><i>急缺人手帮助整理文档、资料，
+                                            <br>如有意请联系站主/群管理，感谢！</i></p>
+        <div class="w3-row w3-padding-32">
+            <div>
+
+                <!--<p><strong>点击表格可排序</strong></p>
+                <p><i>点击一次：拼音首字母顺序(A to Z)；
+                       <br>再次点击：拼音首字母倒序(Z to A)。</i></p>-->
+
+                <table id="myTable">
+                    <tr>
+                        <!--When a header is clicked, run the sortTable function, with a parameter, 0 for sorting by names, 1 for sorting by country:-->
+                        <th>资料名称</th>
+                        <th>下载链接</th>
+                    </tr>
+                    <tr>
+                        <td><a href="./literature/康熙皇帝一家-杨珍.pdf">康熙皇帝一家-杨珍</a></td>
+                        <td><a href="./literature/康熙皇帝一家-杨珍.pdf" download="康熙皇帝一家-杨珍">点击下载</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="./literature/弘旺及其著述研究.pdf">弘旺及其著述研究</a></td>
+                        <td><a href="./literature/弘旺及其著述研究.pdf" download="弘旺及其著述研究">点击下载</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="./literature/永宪录.pdf">永宪录</a></td>
+                        <td><a href="./literature/永宪录.pdf" download="永宪录">点击下载</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="./literature/清实录康熙朝实录.txt">清实录康熙朝实录</a></td>
+                        <td><a href="./literature/清实录康熙朝实录.txt" download="清实录康熙朝实录">点击下载</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="./literature/清实录雍正朝实录.txt">清实录雍正朝实录</a></td>
+                        <td><a href="./literature/清实录雍正朝实录.txt" download="清实录雍正朝实录">点击下载</a></td>
+                    </tr>
+                   
+                </table>
+
+                <!--<script>
+                    function sortTable_(n) {
+                        var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+                        table = document.getElementById("myTable");
+                        switching = true;
+                        //Set the sorting direction to ascending:
+                        dir = "asc";
+                        /*Make a loop that will continue until
+                        no switching has been done:*/
+                        while (switching) {
+                            //start by saying: no switching is done:
+                            switching = false;
+                            rows = table.rows;
+                            /*Loop through all table rows (except the
+                            first, which contains table headers):*/
+                            for (i = 1; i < (rows.length - 1); i++) {
+                                //start by saying there should be no switching:
+                                shouldSwitch = false;
+                                /*Get the two elements you want to compare,
+                                one from current row and one from the next:*/
+                                x = rows[i].getElementsByTagName("TD")[n];
+                                y = rows[i + 1].getElementsByTagName("TD")[n];
+                                /*check if the two rows should switch place,
+                                based on the direction, asc or desc:*/
+                                if (dir == "asc") {
+                                    if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                                        //if so, mark as a switch and break the loop:
+                                        shouldSwitch = true;
+                                        break;
+                                    }
+                                } else if (dir == "desc") {
+                                    if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                                        //if so, mark as a switch and break the loop:
+                                        shouldSwitch = true;
+                                        break;
+                                    }
+                                }
+                            }
+                            if (shouldSwitch) {
+                                /*If a switch has been marked, make the switch
+                                and mark that a switch has been done:*/
+                                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                                switching = true;
+                                //Each time a switch is done, increase this count by 1:
+                                switchcount++;
+                            } else {
+                                /*If no switching has been done AND the direction is "asc",
+                                set the direction to "desc" and run the while loop again.*/
+                                if (switchcount == 0 && dir == "asc") {
+                                    dir = "desc";
+                                    switching = true;
+                                }
+                            }
+                        }
+                    }
+                </script>-->
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- The information Section -->
+
+    <div class="w3-black" id="information">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+            <h2 class="w3-wide w3-center">关于本站</h2>
+            <p class="w3-opacity w3-center"><i>网站仍在搭建中，如发现网页bug，请联系站主</i></p>
+            <div class="w3-row w3-padding-32">
+                <div>
+                    <i class="fa fa-comments" style="width:30px"></i> 8嬷聊天群：522605773<br>
+                    <i class="fa fa-book" style="width:30px"></i> 8嬷资料群：901476867<br>
+                    <i class="fa fa-trophy" style="width:30px"></i> 特别鸣谢：各位文手画手太太、参与资料收集者、群管理、安娜老师的活动文案，以及万千8嬷们！<br>
+                    <i class="fa fa-globe" style="width:30px"> </i> 相关外链：<a href="https://m.weibo.cn/u/6245313744">九子bot</a>，<a href="https://bbs.jjwxc.net/showmsg.php?board=3&boardpagemsg=2&id=3860167">48闲情楼</a> <br>
+
+
+                    
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- End Page Content -->
+    </div>
+
+    <!-- Image of location/map -->
+   <!-- <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">-->
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+        <!--<i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>-->
+        <!--<i class="fa fa-linkedin w3-hover-opacity"></i>-->
+        <p class="w3-medium">Powered by <a href="https://github.com/yinsi8/yinsi8.github.io" target="_blank">Yinsi8</a></p>
+    </footer>
+
+    <script>
+        // Automatic Slideshow - change image every 4 seconds
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 4000);
+        }
+
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        var modal = document.getElementById('ticketModal');
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
